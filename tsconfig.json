@@ -3,5 +3,12 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    /*absolute paths import*/
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
 }

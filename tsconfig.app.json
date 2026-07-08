@@ -7,6 +7,7 @@
     "types": ["vite/client"],
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
+    
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -20,7 +21,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "ignoreDeprecations": "6.0",
+    /*absolute paths import*/
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }
