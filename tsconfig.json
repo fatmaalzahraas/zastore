@@ -8,7 +8,9 @@
     /*absolute paths import*/
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@store": ["src/store/index"],
+      "@types": ["src/types/index"],
     }
   }
 }
